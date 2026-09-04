@@ -26,9 +26,12 @@ Styles live in `css/style.css`, behavior in `js/main.js`. No build step, no fram
 
 ## ✅ Before you launch — replace these placeholders
 
-1. **Legal pages** — every legal page (`privacy-policy.html`, `shipping-policy.html`, `returns-refunds.html`, `terms-conditions.html`, `legal-notice.html`) currently has generic template text with a yellow "Placeholder content" box at the top. Replace the body of each page with your own drafted text, then delete the placeholder box (the `<div class="legal-placeholder">...</div>`). Have a licensed attorney review before publishing — this template is not legal advice.
-2. **Contact info** — in `contact.html` (and the footer on every page), update:
-   - Email: currently `hello@diamonddivetreasures.com`
+1. **Legal pages — status:**
+   - ✅ `privacy-policy.html`, `terms-conditions.html`, `returns-refunds.html` — populated with your drafted text (the "Earnings Disclaimer" and "digital products / subscriptions / all sales final" clauses were removed at your request, since the shop only sells physical jewelry — no digital products or income claims involved).
+   - ⏳ `shipping-policy.html`, `legal-notice.html` — still generic templates (yellow "Placeholder content" box at the top of each). Send over your drafted shipping policy and legal notice/business details when ready, or edit those two pages directly.
+   - Have a licensed attorney give all five pages a final review before publishing — none of this is legal advice.
+2. **Contact info** — in `contact.html` (and every legal page's contact section), update:
+   - Email: currently `nikki@diamondtrz.co.site` — **this is a placeholder** you asked to use until your real business domain/email is set up. Search the project for `nikki@diamondtrz.co.site` and replace it everywhere once confirmed.
    - Phone: currently `(321) 555-0142`
    - Business hours
    - Social media links (currently `#` placeholders in the footer)
