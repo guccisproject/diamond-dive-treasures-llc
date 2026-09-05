@@ -22,6 +22,8 @@ No real diamonds or fine gemstones are sold — everything uses sterling silver,
 
 Styles live in `css/style.css`, behavior in `js/main.js`. No build step, no framework — plain HTML/CSS/JS, so it can be hosted almost anywhere for free.
 
+SEO basics are also wired up for the `diamonddivetreasures.shop` domain: every page has a `<link rel="canonical">` and Open Graph tags pointing at it, and `robots.txt` / `sitemap.xml` reference it too. If you ever change domains, update those in one pass (canonical/OG `<meta>` tags in each HTML `<head>`, plus `robots.txt` and `sitemap.xml`).
+
 ---
 
 ## ✅ Before you launch — replace these placeholders
@@ -31,7 +33,7 @@ Styles live in `css/style.css`, behavior in `js/main.js`. No build step, no fram
    - ✅ `shipping-policy.html`, `legal-notice.html` — written for you with reasonable small-business defaults (2–3 day processing, USPS, U.S.-only shipping, free shipping over $50, etc.). Adjust any of these numbers/carriers once you know your real fulfillment process. `legal-notice.html` intentionally leaves out registered-agent/EIN details since those aren't mine to invent — add them once you're ready to disclose them, or leave the "available upon request" line as-is.
    - Have a licensed attorney give all five pages a final review before publishing — none of this is legal advice.
 2. **Contact info** — in `contact.html` (and every legal page's contact section), update:
-   - Email: currently `nikki@diamondtrz.co.site` — **this is a placeholder** you asked to use until your real business domain/email is set up. Search the project for `nikki@diamondtrz.co.site` and replace it everywhere once confirmed.
+   - ✅ Email: `contact@diamonddivetreasures.shop` (set across the site, using the `diamonddivetreasures.shop` domain).
    - Phone: currently `(321) 555-0142`
    - Business hours
    - Social media links (currently `#` placeholders in the footer)
@@ -88,7 +90,7 @@ This is a static site, so any of these work well and are free or near-free:
 - **GitHub Pages**
 - **Cloudflare Pages**
 
-Once hosted, buy a domain (e.g., `diamonddivetreasures.com`) and point it at your host.
+Once hosted, buy a domain (e.g., `diamonddivetreasures.shop` — the domain already baked into this site's canonical/OG tags, `robots.txt`, and `sitemap.xml`) and point it at your host.
 
 ---
 
