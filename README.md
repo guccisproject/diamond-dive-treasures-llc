@@ -24,6 +24,8 @@ Styles live in `css/style.css`, behavior in `js/main.js`. No build step, no fram
 
 SEO basics are also wired up for the `diamonddivetreasures.shop` domain: every page has a `<link rel="canonical">` and Open Graph tags pointing at it, and `robots.txt` / `sitemap.xml` reference it too. If you ever change domains, update those in one pass (canonical/OG `<meta>` tags in each HTML `<head>`, plus `robots.txt` and `sitemap.xml`).
 
+**Design note:** the site was reworked from an emoji-heavy, rounded "Baloo 2" font look to a cleaner, more professional style — headings and buttons use `Poppins` in uppercase with letter-spacing, body text uses `Nunito` in small caps, and all decorative emoji were replaced with plain CSS/SVG line-icons (or removed outright). If you add new sections, follow that pattern (`text-transform: uppercase` on headings/labels, no raw emoji glyphs in HTML) to keep the whole site consistent.
+
 ---
 
 ## ✅ Before you launch — replace these placeholders
@@ -37,7 +39,7 @@ SEO basics are also wired up for the `diamonddivetreasures.shop` domain: every p
    - ✅ Phone: `(786) 887-3487`
    - ✅ Business hours: online 24/7, orders placed on weekends/holidays begin processing the next business day
 3. **Legal Notice business details** — `legal-notice.html` has bracketed fields like `[Registered agent name & address]` to fill in once your LLC paperwork is finalized.
-4. **Product photos** — every product card currently uses an emoji as a placeholder image. Once you have real photos, replace the `<div class="product-media">🌊</div>` emoji blocks with `<img src="..." alt="...">` tags (both in `gallery.html` and the featured items on `index.html`).
+4. **Product photos** — every product card currently shows a clean line-icon over a category-colored gradient tile (CSS-only, driven by each card's `data-category`) rather than a real photo. Once you have real photos, replace `<div class="product-media">...</div>` with an `<img src="..." alt="...">` tag inside it (both in `gallery.html` and the featured items on `index.html`) — the icon and gradient are applied via CSS, so they'll simply be covered by the image.
 5. **Snipcart & payment processor API key** — see below.
 6. **Contact form ID** — see below.
 
