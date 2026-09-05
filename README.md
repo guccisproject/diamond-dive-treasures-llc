@@ -28,7 +28,7 @@ Styles live in `css/style.css`, behavior in `js/main.js`. No build step, no fram
 
 1. **Legal pages — status:**
    - ✅ `privacy-policy.html`, `terms-conditions.html`, `returns-refunds.html` — populated with your drafted text (the "Earnings Disclaimer" and "digital products / subscriptions / all sales final" clauses were removed at your request, since the shop only sells physical jewelry — no digital products or income claims involved).
-   - ⏳ `shipping-policy.html`, `legal-notice.html` — still generic templates (yellow "Placeholder content" box at the top of each). Send over your drafted shipping policy and legal notice/business details when ready, or edit those two pages directly.
+   - ✅ `shipping-policy.html`, `legal-notice.html` — written for you with reasonable small-business defaults (2–3 day processing, USPS, U.S.-only shipping, free shipping over $50, etc.). Adjust any of these numbers/carriers once you know your real fulfillment process. `legal-notice.html` intentionally leaves out registered-agent/EIN details since those aren't mine to invent — add them once you're ready to disclose them, or leave the "available upon request" line as-is.
    - Have a licensed attorney give all five pages a final review before publishing — none of this is legal advice.
 2. **Contact info** — in `contact.html` (and every legal page's contact section), update:
    - Email: currently `nikki@diamondtrz.co.site` — **this is a placeholder** you asked to use until your real business domain/email is set up. Search the project for `nikki@diamondtrz.co.site` and replace it everywhere once confirmed.
