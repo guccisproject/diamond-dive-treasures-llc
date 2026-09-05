@@ -2,7 +2,7 @@
    Diamond Dive Treasures LLC — Ocean Theme Stylesheet
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Nunito:wght@400;600;700;800&display=swap');
 
 :root {
   /* Ocean palette */
@@ -37,13 +37,17 @@ body {
   color: var(--ink);
   background: var(--foam-white);
   line-height: 1.6;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.01em;
 }
 
 h1, h2, h3, h4, .brand-font {
-  font-family: 'Baloo 2', cursive;
+  font-family: 'Poppins', sans-serif;
   color: var(--deep-navy);
   line-height: 1.2;
   margin: 0 0 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 a { color: var(--teal); text-decoration: none; }
@@ -65,13 +69,15 @@ img { max-width: 100%; display: block; }
   gap: 8px;
   padding: 13px 26px;
   border-radius: 999px;
-  font-family: 'Baloo 2', cursive;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   border: none;
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 .btn:hover { transform: translateY(-2px); }
 
@@ -122,12 +128,13 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: 'Baloo 2', cursive;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-size: 1.35rem;
   color: var(--deep-navy);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
-.logo .logo-icon { font-size: 1.6rem; }
 .logo .logo-sub {
   display: block;
   font-family: 'Nunito', sans-serif;
@@ -168,11 +175,23 @@ img { max-width: 100%; display: block; }
   border: none;
   border-radius: 999px;
   padding: 10px 18px;
-  font-family: 'Baloo 2', cursive;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 .cart-btn:hover { background: var(--ocean-blue); color: #fff; }
+.cart-btn::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 8h12l-1.2 11a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8z'/%3E%3Cpath d='M9 8V6a3 3 0 0 1 6 0v2'/%3E%3C/svg%3E");
+}
 
 .nav-toggle {
   display: none;
@@ -256,11 +275,13 @@ img { max-width: 100%; display: block; }
   width: 320px;
   height: 320px;
   border-radius: 46% 54% 60% 40% / 50% 45% 55% 50%;
-  background: radial-gradient(circle at 30% 30%, rgba(232,176,75,0.9), rgba(255,127,102,0.65) 55%, rgba(79,196,209,0.55));
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none' stroke='%23ffffff' stroke-width='2.2' stroke-linejoin='round'%3E%3Cpath d='M20 35L50 12l30 23-30 53z'/%3E%3Cpath d='M20 35h60M35 35L50 12l15 23M35 35l15 53M65 35L50 88'/%3E%3C/svg%3E"), radial-gradient(circle at 30% 30%, rgba(232,176,75,0.9), rgba(255,127,102,0.65) 55%, rgba(79,196,209,0.55));
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: 130px 130px, cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 6rem;
   box-shadow: 0 30px 60px rgba(0,0,0,0.25);
   animation: float 6s ease-in-out infinite;
 }
@@ -324,9 +345,19 @@ img { max-width: 100%; display: block; }
   width: 62px; height: 62px;
   margin: 0 auto 16px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--aqua), var(--teal));
   display: flex; align-items: center; justify-content: center;
-  font-size: 1.7rem;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: 26px 26px, cover;
+}
+.feature-card .icon-skin {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3s7 7.5 7 12a7 7 0 1 1-14 0c0-4.5 7-12 7-12z'/%3E%3C/svg%3E"), linear-gradient(135deg, var(--aqua), var(--teal));
+}
+.feature-card .icon-ocean {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 15c2 0 2-3 4-3s2 3 4 3 2-3 4-3 2 3 4 3 2-3 4-3'/%3E%3Cpath d='M2 10c2 0 2-3 4-3s2 3 4 3 2-3 4-3 2 3 4 3 2-3 4-3'/%3E%3C/svg%3E"), linear-gradient(135deg, var(--aqua), var(--teal));
+}
+.feature-card .icon-batch {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8l9-5 9 5-9 5-9-5z'/%3E%3Cpath d='M3 8v8l9 5 9-5V8M12 13v8'/%3E%3C/svg%3E"), linear-gradient(135deg, var(--aqua), var(--teal));
 }
 .feature-card h3 { font-size: 1.15rem; margin-bottom: 8px; }
 .feature-card p { color: var(--ink-soft); font-size: 0.96rem; margin: 0; }
@@ -354,8 +385,16 @@ img { max-width: 100%; display: block; }
   height: 190px;
   background: linear-gradient(135deg, var(--aqua), var(--ocean-blue));
   display: flex; align-items: center; justify-content: center;
-  font-size: 3.6rem;
   position: relative;
+}
+.product-media::before {
+  content: '';
+  width: 64px;
+  height: 64px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.92;
 }
 .product-media .tag {
   position: absolute;
@@ -370,9 +409,10 @@ img { max-width: 100%; display: block; }
   border-radius: 999px;
 }
 
-/* Category accent tiles — each category gets its own gradient so the
-   gallery reads as color-coded at a glance, until real product photos
-   replace these placeholder tiles. */
+/* Category accent tiles — each category gets its own gradient plus a
+   clean line-icon so the gallery reads as color-coded and intentional
+   at a glance, until real product photos replace these placeholder
+   tiles (see README for photo sourcing status). */
 .product-card[data-category="necklaces"] .product-media { background: linear-gradient(135deg, var(--aqua), var(--ocean-blue)); }
 .product-card[data-category="bracelets"] .product-media { background: linear-gradient(135deg, var(--teal), var(--deep-navy)); }
 .product-card[data-category="anklets"] .product-media { background: linear-gradient(135deg, var(--sand), var(--treasure-gold)); }
@@ -380,6 +420,28 @@ img { max-width: 100%; display: block; }
 .product-card[data-category="charms"] .product-media { background: linear-gradient(135deg, var(--coral), var(--coral-dark)); }
 .product-card[data-category="earrings"] .product-media { background: linear-gradient(135deg, var(--ocean-blue), var(--teal)); }
 .product-card[data-category="giftsets"] .product-media { background: linear-gradient(135deg, var(--deep-navy), var(--coral-dark)); }
+
+.product-card[data-category="necklaces"] .product-media::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 4c0 6 3.5 10 8 10s8-4 8-10'/%3E%3Ccircle cx='12' cy='17' r='3'/%3E%3C/svg%3E");
+}
+.product-card[data-category="bracelets"] .product-media::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='1.4'%3E%3Cellipse cx='12' cy='12' rx='9' ry='6'/%3E%3C/svg%3E");
+}
+.product-card[data-category="anklets"] .product-media::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='1.4'%3E%3Cellipse cx='11' cy='10' rx='7' ry='5'/%3E%3Ccircle cx='17' cy='16' r='1.6' fill='%23ffffff' stroke='none'/%3E%3C/svg%3E");
+}
+.product-card[data-category="rings"] .product-media::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='1.4'%3E%3Ccircle cx='12' cy='15' r='6'/%3E%3Cpath d='M9 9l3-4 3 4-3 3z' fill='%23ffffff' stroke='none'/%3E%3C/svg%3E");
+}
+.product-card[data-category="charms"] .product-media::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='1.4' stroke-linejoin='round'%3E%3Cpath d='M12 3l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L12 17l-5.6 3.1 1.4-6.3-4.8-4.3 6.4-.6z'/%3E%3C/svg%3E");
+}
+.product-card[data-category="earrings"] .product-media::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='1.4' stroke-linecap='round'%3E%3Ccircle cx='12' cy='6' r='2'/%3E%3Cpath d='M12 8v3c0 3 2 5 2 7a2 2 0 1 1-4 0c0-2 2-4 2-7'/%3E%3C/svg%3E");
+}
+.product-card[data-category="giftsets"] .product-media::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='1.4' stroke-linejoin='round'%3E%3Crect x='4' y='9' width='16' height='11' rx='1'/%3E%3Cpath d='M4 9h16M12 9v11M12 9c-1.5-4-6-4-6-1.5S9 9 12 9zM12 9c1.5-4 6-4 6-1.5S15 9 12 9z'/%3E%3C/svg%3E");
+}
 
 .product-body { padding: 20px 20px 22px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
 .product-cat { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal); }
@@ -390,7 +452,7 @@ img { max-width: 100%; display: block; }
   display: flex; align-items: center; justify-content: space-between;
   margin-top: 10px;
 }
-.price { font-family: 'Baloo 2', cursive; font-weight: 800; font-size: 1.25rem; color: var(--deep-navy); }
+.price { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1.25rem; color: var(--deep-navy); }
 
 .snipcart-add-item {
   background: var(--coral);
@@ -399,9 +461,12 @@ img { max-width: 100%; display: block; }
   border-radius: 999px;
   padding: 10px 18px;
   font-weight: 800;
-  font-family: 'Baloo 2', cursive;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   transition: background 0.15s ease, transform 0.15s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 0.9rem;
 }
 .snipcart-add-item:hover { background: var(--coral-dark); transform: translateY(-2px); }
 
@@ -420,6 +485,9 @@ img { max-width: 100%; display: block; }
   border-radius: 999px;
   cursor: pointer;
   font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 0.85rem;
 }
 .filter-btn.active, .filter-btn:hover {
   background: var(--teal); border-color: var(--teal); color: #fff;
@@ -433,12 +501,15 @@ img { max-width: 100%; display: block; }
   align-items: center;
 }
 .about-blob {
-  background: linear-gradient(160deg, var(--seafoam), #fff);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none' stroke='%231a8a94' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M50 90C25 90 15 65 15 50 15 30 30 15 50 15s35 15 35 35c0 15-10 40-35 40z'/%3E%3Cpath d='M50 90V15M35 88 38 20M65 88 62 20M22 78 30 25M78 78 70 25'/%3E%3C/svg%3E"), linear-gradient(160deg, var(--seafoam), #fff);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: 100px 100px, cover;
   border-radius: 28px;
   padding: 40px;
+  min-height: 180px;
   text-align: center;
   border: 1px solid var(--border-soft);
-  font-size: 5rem;
 }
 .value-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
 .value-list li {
@@ -459,7 +530,7 @@ img { max-width: 100%; display: block; }
   width: 40px; height: 40px; border-radius: 50%;
   background: var(--deep-navy); color: #fff;
   display: flex; align-items: center; justify-content: center;
-  font-family: 'Baloo 2', cursive; font-weight: 700;
+  font-family: 'Poppins', sans-serif; font-weight: 700;
 }
 
 /* ---------------- Contact ---------------- */
@@ -479,9 +550,30 @@ img { max-width: 100%; display: block; }
 .contact-info-item .icon {
   width: 44px; height: 44px; border-radius: 50%;
   background: var(--seafoam); display: flex; align-items: center; justify-content: center;
-  font-size: 1.2rem; flex-shrink: 0;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
 }
-.contact-info-item h4 { margin: 0 0 4px; font-size: 1rem; }
+.contact-info-item .icon-email {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231a8a94' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='14' rx='2'/%3E%3Cpath d='M3 7l9 6 9-6'/%3E%3C/svg%3E");
+}
+.contact-info-item .icon-phone {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231a8a94' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 3h3l2 5-2.5 2a12 12 0 0 0 6.5 6.5l2-2.5 5 2v3a2 2 0 0 1-2 2C9.5 21 3 14.5 3 5a2 2 0 0 1 2-2z'/%3E%3C/svg%3E");
+}
+.contact-info-item .icon-location {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231a8a94' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z'/%3E%3Ccircle cx='12' cy='9' r='2.4'/%3E%3C/svg%3E");
+}
+.contact-info-item .icon-hours {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231a8a94' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7v5l3.5 2'/%3E%3C/svg%3E");
+}
+.contact-info-item h4 {
+  margin: 0 0 4px; font-size: 0.85rem;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--deep-navy);
+}
 .contact-info-item p { margin: 0; color: var(--ink-soft); font-size: 0.94rem; }
 
 .form-field { margin-bottom: 18px; }
@@ -568,7 +660,7 @@ img { max-width: 100%; display: block; }
 .footer-grid li { margin-bottom: 9px; }
 .footer-grid a { color: rgba(255,255,255,0.75); font-size: 0.92rem; }
 .footer-grid a:hover { color: var(--treasure-gold); }
-.footer-brand { font-family: 'Baloo 2', cursive; font-weight: 800; font-size: 1.3rem; color: #fff; margin-bottom: 10px; }
+.footer-brand { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1.3rem; color: #fff; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.03em; }
 .footer-tag { font-size: 0.9rem; color: rgba(255,255,255,0.7); max-width: 30ch; }
 .footer-social { display: flex; gap: 10px; margin-top: 16px; }
 .footer-social a {
