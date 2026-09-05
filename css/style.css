@@ -370,6 +370,17 @@ img { max-width: 100%; display: block; }
   border-radius: 999px;
 }
 
+/* Category accent tiles — each category gets its own gradient so the
+   gallery reads as color-coded at a glance, until real product photos
+   replace these placeholder tiles. */
+.product-card[data-category="necklaces"] .product-media { background: linear-gradient(135deg, var(--aqua), var(--ocean-blue)); }
+.product-card[data-category="bracelets"] .product-media { background: linear-gradient(135deg, var(--teal), var(--deep-navy)); }
+.product-card[data-category="anklets"] .product-media { background: linear-gradient(135deg, var(--sand), var(--treasure-gold)); }
+.product-card[data-category="rings"] .product-media { background: linear-gradient(135deg, var(--treasure-gold), var(--treasure-gold-dark)); }
+.product-card[data-category="charms"] .product-media { background: linear-gradient(135deg, var(--coral), var(--coral-dark)); }
+.product-card[data-category="earrings"] .product-media { background: linear-gradient(135deg, var(--ocean-blue), var(--teal)); }
+.product-card[data-category="giftsets"] .product-media { background: linear-gradient(135deg, var(--deep-navy), var(--coral-dark)); }
+
 .product-body { padding: 20px 20px 22px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
 .product-cat { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal); }
 .product-body h3 { font-size: 1.12rem; margin: 0; }
