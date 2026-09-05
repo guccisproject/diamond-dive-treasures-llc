@@ -36,7 +36,6 @@ SEO basics are also wired up for the `diamonddivetreasures.shop` domain: every p
    - ✅ Email: `contact@diamonddivetreasures.shop` (set across the site, using the `diamonddivetreasures.shop` domain).
    - ✅ Phone: `(786) 887-3487`
    - Business hours
-   - Social media links (currently `#` placeholders in the footer)
 3. **Legal Notice business details** — `legal-notice.html` has bracketed fields like `[Registered agent name & address]` to fill in once your LLC paperwork is finalized.
 4. **Product photos** — every product card currently uses an emoji as a placeholder image. Once you have real photos, replace the `<div class="product-media">🌊</div>` emoji blocks with `<img src="..." alt="...">` tags (both in `gallery.html` and the featured items on `index.html`).
 5. **Snipcart & payment processor API key** — see below.
