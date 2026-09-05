@@ -34,7 +34,7 @@ SEO basics are also wired up for the `diamonddivetreasures.shop` domain: every p
    - Have a licensed attorney give all five pages a final review before publishing — none of this is legal advice.
 2. **Contact info** — in `contact.html` (and every legal page's contact section), update:
    - ✅ Email: `contact@diamonddivetreasures.shop` (set across the site, using the `diamonddivetreasures.shop` domain).
-   - Phone: currently `(321) 555-0142`
+   - ✅ Phone: `(786) 887-3487`
    - Business hours
    - Social media links (currently `#` placeholders in the footer)
 3. **Legal Notice business details** — `legal-notice.html` has bracketed fields like `[Registered agent name & address]` to fill in once your LLC paperwork is finalized.
