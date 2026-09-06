@@ -109,7 +109,7 @@ A starter set of ~20 product ideas is already built into `gallery.html`, organiz
 | Sand Dollar Shimmer | Sterling Silver + CZ | $38.00 |
 | Tide Pool Pearl Drop | Sterling Silver + Freshwater Pearl | $42.00 |
 | Message in a Bottle | Sea Glass + Stainless Steel | $29.00 |
-| Sea Turtle Voyage | Sterling Silver | $36.00 |
+| Calm Waters Pendant | Sterling Silver | $36.00 |
 
 ### Bracelets
 | Item | Material | Price |
@@ -136,10 +136,10 @@ A starter set of ~20 product ideas is already built into `gallery.html`, organiz
 ### Charms (fit the Starter Bracelet)
 | Item | Material | Price |
 |---|---|---|
-| Octopus Garden Charm | Sterling Silver | $12.00 |
-| Sand Dollar Charm | Sterling Silver | $10.00 |
-| Compass Rose Charm | Sterling Silver | $12.00 |
-| Little Lighthouse Charm | Sterling Silver | $12.00 |
+| Silver Bell Charm | Sterling Silver | $12.00 |
+| Beach Shell Charm | Sterling Silver | $10.00 |
+| Ocean Chime Charm | Sterling Silver | $12.00 |
+| Sandy Shell Charm | Sterling Silver | $12.00 |
 
 ### Earrings
 | Item | Material | Price |
