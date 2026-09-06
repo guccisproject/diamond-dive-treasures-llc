@@ -39,7 +39,10 @@ SEO basics are also wired up for the `diamonddivetreasures.shop` domain: every p
    - ✅ Phone: `(786) 887-3487`
    - ✅ Business hours: online 24/7, orders placed on weekends/holidays begin processing the next business day
 3. **Legal Notice business details** — `legal-notice.html` has bracketed fields like `[Registered agent name & address]` to fill in once your LLC paperwork is finalized.
-4. **Product photos** — every product card currently shows a clean line-icon over a category-colored gradient tile (CSS-only, driven by each card's `data-category`) rather than a real photo. Once you have real photos, replace `<div class="product-media">...</div>` with an `<img src="..." alt="...">` tag inside it (both in `gallery.html` and the featured items on `index.html`) — the icon and gradient are applied via CSS, so they'll simply be covered by the image.
+4. **Product photos** — each category (necklaces, bracelets, anklets, rings, charms, earrings, gift sets) currently shows one representative free stock photo from Unsplash, applied via CSS (`.product-card[data-category="..."] .product-media`) — the same photo covers every item in that category, since these are stand-ins, not photos of your actual pieces. The hero banners and the decorative "blob" shapes on the homepage/About page also use Unsplash photos, set the same way in `css/style.css`.
+   - **Swap in real product photos** once you have them (from your supplier or your own camera): add an `<img src="..." alt="...">` tag inside the specific product's `<div class="product-media">...</div>` in `gallery.html` (and the matching featured item in `index.html`) — it'll sit on top of the category background.
+   - **Swap the stock photos for different ones**: each is set as a `background-image: url("https://images.unsplash.com/...")` in `css/style.css` — search `images.unsplash.com` in that file to find and replace them.
+   - Unsplash photos are free to use commercially and don't legally require attribution, but a small credit link is included in every page's footer as good practice — remove it if you'd rather not.
 5. **Snipcart & payment processor API key** — see below.
 6. **Contact form ID** — see below.
 
