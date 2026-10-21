@@ -36,7 +36,7 @@ SEO basics are also wired up for the `diamonddivetreasures.shop` domain: every p
    - Have a licensed attorney give all five pages a final review before publishing — none of this is legal advice.
 2. **Contact info** — in `contact.html` (and every legal page's contact section), update:
    - ✅ Email: `contact@diamonddivetreasures.shop` (set across the site, using the `diamonddivetreasures.shop` domain).
-   - ✅ Phone: `(786) 887-3487`
+   - ✅ Phone: `(321) 289-6412`
    - ✅ Business hours: online 24/7, orders placed on weekends/holidays begin processing the next business day
 3. **Legal Notice business details** — `legal-notice.html` has bracketed fields like `[Registered agent name & address]` to fill in once your LLC paperwork is finalized.
 4. **Product photos** — each category (necklaces, bracelets, anklets, rings, charms, earrings, gift sets) currently shows one representative free stock photo from Unsplash, applied via CSS (`.product-card[data-category="..."] .product-media`) — the same photo covers every item in that category, since these are stand-ins, not photos of your actual pieces. The hero banners and the decorative "blob" shapes on the homepage/About page also use Unsplash photos, set the same way in `css/style.css`.
